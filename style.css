@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav img {
+    margin-top: 10px;
+    margin-right: 50px;
+    width: 200px;
+    height: 30px;
+}
+
+.nav nav {
+    display: flex;
+    flex-direction: flex;
+    background-color: black;
+    height: 50px;
+    justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    margin-right: 35px;
+}
+
+.inicio {
+    height: 580px;
+    background-image: url(img/banner.jpg);
+}
+
+.inicio button {
+    border: none;
+    background-color: rgb(9, 105, 196);
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.kpz img {
+    width: 380px;
+    height: 200px;
+}
+
+.img1 {
+    margin-top: 40px;
+    margin-left: 370px;
+}
+
+.img2 {
+    margin-left: 790px;
+    margin-top: -223px;
+}
+
+.img3 {
+    margin-left: 1210px;
+    margin-top: -223px;
+}
+
+.img4 {
+    margin-top: 80px;
+    margin-left: 370px;
+}
+
+.ram h2 {
+    text-align: right;
+}
+
+
+
+
+
+
