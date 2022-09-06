@@ -1,75 +1,355 @@
 *{
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #000;
+}
+
+nav ul {
+    list-style: none;
+    float: center;
     margin: 0;
     padding: 0;
-}
-
-.nav img {
-    margin-top: 10px;
-    margin-right: 50px;
-    width: 200px;
-    height: 30px;
-}
-
-.nav nav {
     display: flex;
-    flex-direction: flex;
-    background-color: black;
-    height: 50px;
-    justify-content: center;
 }
 
-.nav a {
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
     text-decoration: none;
-    color: white;
-    margin-top: 15px;
-    margin-right: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.inicio {
-    height: 580px;
-    background-image: url(img/banner.jpg);
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
 }
 
-.inicio button {
-    border: none;
-    background-color: rgb(9, 105, 196);
-    color: white;
-    width: 200px;
-    height: 40px;
+.box {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
     font-size: 18px;
+    border-radius: 15px;
+    color: #fff;
+    background: #000 url(img/buscador.png) no-repeat 9px center;
+    width: 60px;
+    transition: all .5s;
 }
 
-.kpz img {
-    width: 380px;
-    height: 200px;
+input.src:hover{
+    width: 180px;
+    background-color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 5px #000;
 }
 
-.img1 {
-    margin-top: 40px;
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 2.25em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+ button{
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 99, 192);
+    cursor: pointer;
+    border: #000000;
+ }
+
+ button:hover{
+    background-color: rgb(71, 97, 245)
+}
+
+ 
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#inicio {
+    height: 590px;
+    background-image: url(img/banner.jpg);
+    
+}
+
+#inicio h1 {
+    color: white;
     margin-left: 370px;
+    top: 415px;
+    position: relative;
 }
 
-.img2 {
-    margin-left: 790px;
-    margin-top: -223px;
-}
-
-.img3 {
-    margin-left: 1210px;
-    margin-top: -223px;
-}
-
-.img4 {
-    margin-top: 80px;
+#inicio p {
+    color: white;
     margin-left: 370px;
+    top: 400px;
+    position: relative;
 }
 
-.ram h2 {
-    text-align: right;
+#inicio button {
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: cornflowerblue;
+    margin-left: 20px;
+    left: 350px;
+    top: 400px;
+    position: relative;
 }
 
+.buttons{
+    margin-top: 500px;
+    margin-left: -640px;
+}
+
+.footers img {
+                width: 380px;
+                height: 200px;
+            }
+            
+            .footer1 {
+                margin-top: -200px;
+                margin-left: -750px;
+            }
+            
+            .footer2 {
+                margin-left: 100px;
+                margin-top: -270px;
+            }
+            
+            .footer3 {
+                margin-left: 950px;
+                margin-top: -272px;
+            }
+
+            .footer4 {
+                background-image: url(img/rambling-raven.jpg);
+                width: 543px;
+                height: 307px;
+                margin-top: 100px;
+                margin-left: 122px;
+            }
+
+            .footer4 h2 {
+                margin-top: 100px;
+                margin-left: 580px;
+                white-space: nowrap;
+                color: rgb(0, 145, 230);
+                font-size: 2em;
+            }
+
+            .footer4 h3 {
+                margin-top: -20px;
+                margin-left: 580px;
+                white-space: nowrap;
+                color: rgb(0, 0, 0);
+                font-size: 1.15em;
+            }
+
+            .parrafo4 {
+                margin-top: -240px;
+                margin-left: 702px;
+                margin-right: 200px;
+                text-align: left;
+                color: rgb(0, 0, 0);
+                font-size: 1em;
+            }
+
+            .button-footer{
+                margin-top: -2px;
+                margin-left: 130px;
+            }
+
+#news h1{
+    white-space: nowrap;
+    color: rgb(0, 145, 230);
+    font-size: 1.50em;
+}
+
+#news .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+.tres-container{
+    box-shadow: 10px  black;
+    text-shadow: 10px black;
+}
+
+.title1 h1 {
+                margin-top: 100px;
+                margin-left: -900px;
+                white-space: nowrap;
+                color: rgb(0, 145, 230);
+                font-size: 1.75em;
+            }
+
+            .title2 h3{
+                margin-top: -20px;
+                margin-left: -870px;
+                white-space: nowrap;
+                font-size: 1.20em;
+                color: rgb(255, 255, 255);
+            }
+
+            .title3 p{
+                margin-top: 15px;
+                margin-left: -214px;
+                margin-right: 450px;
+                text-align: left;
+                font-size: 1.20em;
+                color: rgb(255, 255, 255);
+            }
+
+            .buttons2{
+                margin-top: 30px;
+                margin-left: -730px;
+                
+            }
+
+            .caratulas{
+                margin-top: -250px;
+                margin-left: 520px;
+            }
+
+#esports{
+    background-image: url(img/fondo.jpeg);
+    height: 550px;
+    color: white;
+    text-align: center;
+}
+
+#esports .container{
+    padding: 60px 12px;
+}
+
+#community{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    height: 65vh;
+}
+
+#community .container{
+    padding: 200px 12px;
+}
+
+#community img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+footer{
+    background-color: rgb(37, 37, 37);
+    height: 7vh;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #news {
+        height: 850px;
+        }
 
 
+    #news .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #esports .programas{
+        display: flex;
+        justify-content: center;
+    }
 
 
+    footer p{
+        color: rgb(252, 252, 252);
+        cursor: pointer;
+    }
+    
+    footer .container{
+        justify-content: flex-end;
 
+    }
+
+    .idioma img{
+        width: 40px;
+        margin-left: 350px;
+        margin-top: 15px;
+
+    }
+
+    .idioma p{
+        margin-left: 400px;
+        margin-top: -45px;
+    }
+
+    .ultimo p{
+        display: inline;
+        padding: 30px;
+        margin-left: 1000px;
+        margin-top: -35px;
+    }
+
+    .ultimo img{
+        width: 150px;
+        margin-left: 350px;
+        margin-top: -900px;
+    }
+
+}
